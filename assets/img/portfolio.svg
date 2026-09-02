@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#g)"/>
+<rect x="70" y="70" width="660" height="310" rx="24" fill="#ffffff" opacity=".12"/>
+<text x="400" y="205" text-anchor="middle" font-family="Arial" font-size="44" fill="white">Portfólio</text>
+<text x="400" y="260" text-anchor="middle" font-family="Arial" font-size="25" fill="#cffafe">Design responsivo</text>
+</svg>

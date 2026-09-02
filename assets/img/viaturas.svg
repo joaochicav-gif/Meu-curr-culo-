@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração do sistema de aluguer de viaturas">
+  <defs>
+    <linearGradient id="bgViaturas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102454"/>
+      <stop offset="100%" stop-color="#0a1330"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#bgViaturas)"/>
+  <g opacity="0.5" stroke="#3f8ce8" stroke-width="1">
+    <circle cx="350" cy="50" r="24" fill="none"/>
+  </g>
+  <path d="M110 165 L135 130 Q142 122 155 122 L245 122 Q258 122 265 130 L290 165 Z" fill="#1958c9"/>
+  <rect x="95" y="163" width="210" height="30" rx="8" fill="#3f8ce8"/>
+  <rect x="150" y="132" width="45" height="24" rx="4" fill="#0a1330"/>
+  <rect x="205" y="132" width="45" height="24" rx="4" fill="#0a1330"/>
+  <circle cx="140" cy="195" r="16" fill="#0a1330" stroke="#34d3ee" stroke-width="3"/>
+  <circle cx="260" cy="195" r="16" fill="#0a1330" stroke="#34d3ee" stroke-width="3"/>
+  <text x="200" y="230" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif" font-size="16" fill="#ffffff">Aluguer de Viaturas</text>
+</svg>
