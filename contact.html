@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de contacto do currículo de João Chicava João Dojo.">
+    <title>Contacto | João Chicava</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+<header class="site-header"><div class="header-inner">
+    <a class="logo" href="index.html">Currículo</a>
+    <nav aria-label="Navegação principal"><ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">Sobre</a></li>
+        <li><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+        <li><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+        <li><a class="nav-link active" href="contact.html" aria-current="page">Contacto</a></li>
+    </ul></nav>
+</div></header>
+
+<main id="conteudo">
+    <section>
+        <div class="container">
+            <div class="page-heading">
+                <p class="eyebrow">Fale comigo</p>
+                <h1>Contacto</h1>
+                <p>Utilize o formulário abaixo para enviar uma mensagem. A validação é feita pelos recursos nativos do HTML5, sem JavaScript.</p>
+            </div>
+
+            <article class="card form-card">
+                <form action="#enviado" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Formulário de contacto</legend>
+                        <div class="form-grid">
+                            <div class="form-row">
+                                <label for="nome">Nome completo *</label>
+                                <input type="text" id="nome" name="nome" required minlength="3" maxlength="80" placeholder="Ex.: João Manuel">
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required maxlength="100" placeholder="exemplo@email.com">
+                            </div>
+                            <div class="form-row">
+                                <label for="telefone">Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" required pattern="\+258\s?(8[2-7])\s?\d{3}\s?\d{4}" placeholder="+258 84 123 4567" aria-describedby="telefone-ajuda">
+                                <span id="telefone-ajuda" class="help">Formato: +258 84 123 4567</span>
+                            </div>
+                            <div class="form-row">
+                                <label for="data">Data preferida de contacto *</label>
+                                <input type="date" id="data" name="data" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="experiencia">Anos de experiência profissional</label>
+                                <input type="number" id="experiencia" name="experiencia" min="0" max="10" value="0">
+                            </div>
+                            <div class="form-row">
+                                <label for="assunto">Assunto *</label>
+                                <select id="assunto" name="assunto" required>
+                                    <option value="" selected disabled>Selecione uma opção</option>
+                                    <option value="academico">Projeto académico</option>
+                                    <option value="projeto">Proposta de projeto</option>
+                                    <option value="duvida">Dúvida</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <div class="form-row full">
+                                <span id="tipo-label"><strong>Forma preferida de resposta *</strong></span>
+                                <div class="radio-group" role="group" aria-labelledby="tipo-label">
+                                    <label class="radio-option"><input type="radio" name="resposta" value="email" required> Email</label>
+                                    <label class="radio-option"><input type="radio" name="resposta" value="telefone"> Telefone</label>
+                                </div>
+                            </div>
+                            <div class="form-row full">
+                                <label for="ficheiro">Anexar CV ou portfólio</label>
+                                <input type="file" id="ficheiro" name="ficheiro" accept=".pdf,.doc,.docx">
+                                <span class="help">Formatos permitidos: PDF, DOC e DOCX.</span>
+                            </div>
+                            <div class="form-row full">
+                                <label for="mensagem">Mensagem *</label>
+                                <textarea id="mensagem" name="mensagem" required minlength="10" maxlength="500" placeholder="Escreva a sua mensagem..."></textarea>
+                            </div>
+                            <div class="form-row full">
+                                <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid">
+    <section><h2>Contacto</h2><p>Email: <a href="mailto:Joaochicav@gmail.com">Joaochicav@gmail.com</a></p><p>Telefone: <a href="tel:+258849368986">84 936 8986</a></p></section>
+    <section><h2>Localização</h2><p>Beira, Moçambique</p></section>
+    <section><h2>Online</h2><p><a href="https://github.com/joaochicava" target="_blank" rel="noopener">GitHub: joaochicava</a></p></section>
+</div><div class="container copyright"><p>© 2026 João Chicava João Dojo. Desenvolvido por João Chicava João Dojo.</p></div></footer>
+</body>
+</html>
